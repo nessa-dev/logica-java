@@ -1,8 +1,8 @@
-// Desenvolva um programa que dado um número, imprima uma das mensagens: é múltiplo de 3 ou não é múltiplo de 3. 
+// Fibonacci. Alguns números desta sequência são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...
 
 import java.util.Scanner;
 
-public class Exercicio29 {
+public class Exercicio31 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 
 

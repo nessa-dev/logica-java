@@ -1,8 +1,8 @@
-// Desenvolva um programa que dado um número, imprima uma das mensagens: é múltiplo de 3 ou não é múltiplo de 3. 
+// Crie uma função recursiva que receba um número inteiro positivo N e calcule o somatório dos números de 1 a N.
 
 import java.util.Scanner;
 
-public class Exercicio29 {
+public class Exercicio32 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 
 
