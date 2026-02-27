@@ -6,8 +6,16 @@ public class Exercicio3 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		 //escreva seu código aqui
+		int num; 
+		System.out.print("Informe um número: ");
+        num = input.nextInt();
 
+
+		if (num > 20){
+		System.out.println("O número informado foi: " + num);
+		} else{
+			System.out.print("Não é possível imprimir um número menor que 20");
+		}
 		input.close();
 	}
 }

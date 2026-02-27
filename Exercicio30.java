@@ -3,11 +3,26 @@
 import java.util.Scanner;
 
 public class Exercicio30 {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in); 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-		//escreva seu código aqui
-		
-		input.close();
-	}
+        System.out.print("Digite um número inteiro para calcular o fatorial: ");
+        int n = input.nextInt();
+
+        if (n < 0) {
+            System.out.println("Não existe fatorial de número negativo.");
+        } else {
+            long resultado = calcularFatorial(n);
+            System.out.println("O fatorial de " + n + " é: " + resultado);
+        }
+
+        input.close();
+    }
+
+    public static long calcularFatorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        return n * calcularFatorial(n - 1);
+    }
 }

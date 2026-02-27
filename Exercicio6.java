@@ -7,7 +7,17 @@ public class Exercicio6 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		 //escreva seu código aqui
+		double cotacaoDolar, qtdDolar, valorReal;
+
+        System.out.print("Informe a cotação do dólar hoje: ");
+        cotacaoDolar = input.nextDouble();
+
+        System.out.print("Informe a quantidade de dólares (US$): ");
+        qtdDolar = input.nextDouble();
+
+        valorReal = qtdDolar * cotacaoDolar;
+
+        System.out.printf("\nO valor convertido em reais é: R$ %.2f\n", valorReal);
 
 		 input.close();
 	}

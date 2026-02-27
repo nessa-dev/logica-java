@@ -7,7 +7,13 @@ public class Exercicio7 {
 	public static void main(String[] args) {
 		 Scanner input = new Scanner(System.in); 
 		 
-		 //escreva seu código aqui		 
+		double valorDeposito, valorRendimento, taxaJuros = 0.007; 
+        System.out.print("Digite o valor do depósito: ");
+        valorDeposito = input.nextDouble();
+
+        valorRendimento = valorDeposito + (valorDeposito * taxaJuros);
+
+        System.out.printf("\nValor após um mês de rendimento: R$ %.2f\n", valorRendimento);		 
 
 		input.close();
 	}

@@ -8,7 +8,17 @@ public class Exercicio19 {
 
 		short a, b;
 		
-		 //escreva seu código aqui
+		System.out.print("Digite o primeiro valor: ");
+        a = input.nextShort();
+
+        System.out.print("Digite o segundo valor: ");
+        b = input.nextShort();
+
+        if (a > b) {
+            System.out.println("O maior valor é: " + a);
+        } else {
+            System.out.println("O maior valor é: " + b);
+        }
 		
 		input.close();
 	}

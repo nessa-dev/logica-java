@@ -7,14 +7,31 @@ public class Exercicio2 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		double ConsumoMedio;
-		double kmi; // distância inicial
-		double kmf; //distância final
-		double litros;
-		double kmtotal;
+		double consumoMedio;
+        double kmi; 
+        double kmf; 
+        double litros;
+        double kmtotal;
 
-		 //escreva seu código aqui
+        System.out.print("Informe a distancia inicial: ");
+        kmi = input.nextDouble();
+        
+        System.out.print("Informe a distancia final: ");
+        kmf = input.nextDouble();
+        
+        System.out.print("Informe o total de litros consumidos: ");
+        litros = input.nextDouble();
 
-		input.close();
+        kmtotal = kmf - kmi;
+        
+        if (litros > 0) {
+            consumoMedio = kmtotal / litros;
+            System.out.printf("\nDistancia percorrida: %.2f km", kmtotal);
+            System.out.printf("\nConsumo Medio: %.2f km/l\n", consumoMedio);
+        } else {
+            System.out.println("\nErro: O total de litros deve ser maior que zero.");
+        }
+
+        input.close();
 	}
 }

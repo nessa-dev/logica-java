@@ -15,8 +15,23 @@ public class Exercicio1 {
 		 System.out.print("Digite o segundo número:" );   
 		 y = input.nextInt();   
 		 
-		 //escreva seu código aqui
+		 soma = x + y;
+		 subt = x - y;
+		 mult = x * y;
+		
+		if(y != 0){
+		div = x / y;
+		System.out.println("Divisão: " + div);
+		} else{
+			System.out.println("Não é possível realizar essa divisão");
+		}
 
-		 input.close();
+
+		System.out.println("Soma: " + soma);
+		System.out.println("Subtração: " + subt);
+		System.out.println("Multiplicação: " + mult);
+		input.close();
+
+
 	}
 }

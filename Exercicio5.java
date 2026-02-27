@@ -6,9 +6,12 @@ import java.util.Scanner;
 public class Exercicio5 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		
-		//escreva seu código aqui
-		 
+		double celsius, fahrenheit;
+		System.out.print("Digite a temperatura em graus Celsius: ");
+        celsius = input.nextDouble();
+		fahrenheit = (9 * celsius + 160) / 5;
+		System.out.printf("\n%.1f°C convertido para Fahrenheit é: %.1f°F\n", celsius, fahrenheit);
+
 		 input.close();
 	}
 }

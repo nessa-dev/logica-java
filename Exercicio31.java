@@ -6,7 +6,21 @@ public class Exercicio31 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 
 
-		//escreva seu código aqui
+		System.out.print("Quantos números da sequência de Fibonacci você deseja ver? ");
+        int n = input.nextInt();
+
+        long proximo, atual = 1, anterior = 0;
+
+        System.out.println("Sequência de Fibonacci até o " + n + "º termo:");
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print(anterior + " ");
+
+            proximo = anterior + atual;
+            anterior = atual;
+            atual = proximo;
+        }
+        System.out.println();
 		
 		input.close();
 	}
